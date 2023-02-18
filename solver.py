@@ -40,7 +40,7 @@ def solve_maze(new_x,new_y,x,y,grid):
         if new_x == DIM-1 and new_y == DIM-1:
             grid[new_x][new_y] = 2
             finish = True
-            exit
+            return
 
         elif check_valid(new_x,new_y,grid) and (new_x != last_x or new_y != last_y):
             grid[new_x][new_y] = 2
